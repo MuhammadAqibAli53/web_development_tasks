@@ -313,12 +313,22 @@ h4{
         display: block;
     }
     .nav-links{
-        width: 90%;
+        width: 95%;
         margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0rem;
+        justify-content: space-between;
+        padding: 1rem;
+     
     }
+    .nav-links li a{
+       
+font-size: 1.2rem;
+    }
+    .main-nav>ul li a {
+        padding: 0.5rem;
+         
+    }
+
+
     .gallery2{
         grid-template-columns: 1fr 1fr;
         row-gap: 2rem;
@@ -344,6 +354,12 @@ h4{
     .template-credit{
         font-size: 1.3rem;
     }
+    .nav-links li a{
+        font-size: 1rem;
+        
+       
+        
+    }
     .footer-top-row{
         grid-template-columns: 1fr;
         row-gap: 3rem;
@@ -353,9 +369,14 @@ h4{
     .image-placeholder{
         width: 50%;
     }
+    .para{
+        display: none;
+    }
+    .divider{
+        display: none;
+    }
     .site-header{
-        flex-direction: column;
-        text-align: center;
+       
         justify-content: space-between;
     }
     .para p {
@@ -385,14 +406,24 @@ h4{
 
     }
 }
-@media(max-width: 500px){
+@media(max-width: 504px){
     .search{
         width: 70%;
         margin-bottom: 1rem;
     }
+    .site-header{
+         flex-direction: column;
+        text-align: center;
+    }
     .button{
         width: 70%;
         margin-bottom: 1rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem;
+        width: 70%;
     }
     .nav-links li{
         width: 100%;
